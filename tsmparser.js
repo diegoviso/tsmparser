@@ -23,7 +23,7 @@ var myArgs = process.argv.slice(1);
 console.log("\n*** TSM Parser ***");
 
 if(myArgs.length != 5) {
-	console.log("\nTakes a JSON key value object and converts it to a Instances compliant schema\nMissing input file.\n\nUsage: node tsmparser.js [input_json] [tsid] [hierarchyId] [typeId].\n");
+	console.log("\nTakes a JSON key value object and converts it to a TSM Instances compliant schema\nMissing input file.\n\nUsage: node tsmparser.js [input_json] [tsid] [hierarchyId] [typeId].\n");
 	process.exit(1);
 }
 
