@@ -1,7 +1,19 @@
 //TSM PARSER FOR AZURE TIME SERIES INSIGHTS
-//TAKES A JSON OBJECT FILLED WITH KEY/VALUE PAIR AND CONVERTS IT TO A TSM COMPLIANTE INSTANCES
-//SCHEMA
+//TAKES A JSON OBJECT WITH KEY/VALUE PAIRS AND CONVERTS IT TO A TSM COMPLIANT INSTANCES SCHEMA
 //AUTHOR - DIEGO.VISO@MICROSOFT.COM
+
+/*
+
+Example source format:
+{
+    "TagId": "tag1",
+    "TagType": "temperature",
+    "unit" : "celcius",
+    "Building": "Building 40",
+    "Level": "L1",
+    "Area": "131"
+    }
+*/
 
 var fs = require("fs");
 var colors = require("colors");
